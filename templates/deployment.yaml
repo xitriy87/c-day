@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "c-day.fullname" . }}
-  namespace: prod
   labels:
     {{- include "c-day.labels" . | nindent 4 }}
 spec:
